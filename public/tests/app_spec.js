@@ -35,7 +35,7 @@ describe('answer section', function() {
         console.log('my view !!!!!!');
         console.log(view.html());
         view.find('.check-btn').click();
-        expect(view.find('.result').html()).toEqual('Correct!');
+        expect(view.find('.result span').html()).toEqual('Correct!');
 
     });
     it('reject an incorrect answer', function() {
